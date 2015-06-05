@@ -44,10 +44,11 @@ public class MyTimerTask extends TimerTask {
         layoutParams.width = -1;
         layoutParams.height = -1;
         relativeLayout = new RelativeLayout(MyApplication.application);
-        relativeLayout.setBackgroundColor(Color.TRANSPARENT);
+        relativeLayout.setBackgroundColor(Color.RED);
+        relativeLayout.getBackground().setAlpha(100);
         relativeLayout.setVisibility(View.GONE);
         TextView textView = new TextView(MyApplication.application);
-        textView.setText("clickjack");
+        textView.setText("clickjacking");
         textView.setTextColor(Color.RED);
         relativeLayout.addView(textView);
         relativeLayout.setOnClickListener(new View.OnClickListener() {
